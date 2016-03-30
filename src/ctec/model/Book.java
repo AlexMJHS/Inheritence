@@ -1,4 +1,5 @@
 package ctec.model;
+
 /**
  * 
  * @author Alejandro Magallanes
@@ -8,55 +9,37 @@ public abstract class Book
 {
 	//Three Data Members
 	private String bookName;
-	private String characters;
+	private String mainCharacter;
 	private int yearWritten;
-	
-	/**
-	 * @return the bookName
-	 */
+
 	public String getBookName()
 	{
 		return bookName;
 	}
-	
-	/**
-	 * @param bookName the bookName to set
-	 */
+
 	public void setBookName(String bookName)
 	{
 		this.bookName = bookName;
 	}
-	
-	/**
-	 * @return the yearWritten
-	 */
+
 	public int getYearWritten()
 	{
 		return yearWritten;
 	}
-	
-	/**
-	 * @param yearWritten the yearWritten to set
-	 */
+
 	public void setYearWritten(int yearWritten)
 	{
 		this.yearWritten = yearWritten;
 	}
 	
-	/**
-	 * @return the characters
-	 */
-	public String getCharacters()
+	public String getMainCharacter()
 	{
-		return characters;
+		return mainCharacter;
 	}
-	
-	/**
-	 * @param characters the characters to set
-	 */
-	public void setCharacters(String characters)
+
+	public void setMainCharacter(String mainCharacter)
 	{
-		this.characters = characters;
+		this.mainCharacter = mainCharacter;
 	}
 	
 	
