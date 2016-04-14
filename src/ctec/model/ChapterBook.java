@@ -1,5 +1,9 @@
 package ctec.model;
 
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
 public class ChapterBook extends Book
 {
 	private String bookName;
@@ -12,4 +16,32 @@ public class ChapterBook extends Book
 		this.setMainCharacter("Katniss");
 		this.setYearWritten(2008);
 	}
+
+	public double coolnessLevel()
+	{
+		return 5;
+	}
+
+	public void coolAction(int numberOfTimes)
+	{
+		for(int spot = 0; spot < numberOfTimes; spot++)
+		{
+			JOptionPane.showMessageDialog(null, "This is cool!");
+		}
+	}
+
+	public int cost()
+	{
+		
+		return 15;
+	}
+
+	public void EthanBradberry(int numberOfTimes)
+	{
+		for(int spot = 0; spot < numberOfTimes; spot++)
+		{
+			JOptionPane.showMessageDialog(null, "I'm Ethan Bradberry!");
+		}
+	}
+	
 }
