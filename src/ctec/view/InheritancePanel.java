@@ -17,7 +17,20 @@ public class InheritancePanel extends JPanel
 	private SpringLayout baseLayout;
 	private JScrollPane textPane;
 	
-	public 
+	private void setupPane()
+	{
+		textPane = new JScrollPane(textArea);
+		textPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
+		textPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+	}
+	
+	private void setupPanel()
+	{
+		this.setLayout(baseLayout);
+		this.add(textPane);
+		this.add(sortButton);
+		textArea.setText(baseController.showCoolnessLevels());
+	}
 	
 	private void setListeners()
 	{
